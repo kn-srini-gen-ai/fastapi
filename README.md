@@ -1,5 +1,6 @@
 # fastapi
 # build fast api and automate cicd.
+# .env variables loaded in endpoints.py
 # uvicorn app.main:app --reload
 # python -m pytest tests/
 # pytest tests/ -v

@@ -1,6 +1,14 @@
 from fastapi import APIRouter, HTTPException
 from app.api.models.model import NumbersInput
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Load environment variables from .env file
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+SECRET_KEY = os.getenv("SECRET_KEY")
+
 router = APIRouter()
 
 @router.post("/add")
