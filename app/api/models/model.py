@@ -11,3 +11,4 @@ class NumbersInput(BaseModel):
         if value == 0:
             raise ValueError("num2 cannot be zero for division operations")
         return value
+    # added in feature/f2
